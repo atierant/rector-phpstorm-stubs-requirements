@@ -1,0 +1,27 @@
+{
+  "name": "atierant/rector-requirements",
+  "description": "Test about removing phpstorm-stubs",
+  "minimum-stability": "dev",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Arnaud TIERANT",
+      "email": "arnaud@tierant.fr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MyProject\\": "src"
+    }
+  },
+  "require-dev": {
+    "rector/rector": "dev-master"
+  },
+  "scripts": {
+    "rector": "vendor/bin/rector process src --set dead-code --dry-run"
+  },
+  "scripts-descriptions": {
+    "rector": "Instant Upgrades and Instant Refactoring of php code."
+  }
+}
+
