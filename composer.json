@@ -15,13 +15,19 @@
     }
   },
   "require-dev": {
-    "rector/rector": "dev-master"
+    "rector/rector": "dev-phpstorm-requirement"
   },
   "scripts": {
     "rector": "vendor/bin/rector process src --set dead-code --dry-run"
   },
   "scripts-descriptions": {
     "rector": "Instant Upgrades and Instant Refactoring of php code."
-  }
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/atierant/rector"
+    }
+  ]
 }
 

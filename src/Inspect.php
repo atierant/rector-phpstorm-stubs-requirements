@@ -17,6 +17,17 @@ class Inspect
 
     public function run()
     {
-        return true && 5 === 1;
-     }
+        $this->runWithDefault([]);
+        $card = self::runWithStaticDefault([]);
+    }
+
+    public function runWithDefault($items = [])
+    {
+        return $items;
+    }
+
+    public function runStaticWithDefault($cards = [])
+    {
+        return $cards;
+    }
 }
