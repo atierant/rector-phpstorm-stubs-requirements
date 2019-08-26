@@ -2,5 +2,7 @@
 
 run :
 
+````
 composer install
 composer rector
+````
